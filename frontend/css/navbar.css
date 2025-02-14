@@ -1,0 +1,209 @@
+/* 
+?================================
+?            Navbar
+?================================
+*/
+
+
+
+.nav {
+    margin-top: 9rem;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__icon {
+    display: none;
+    cursor: pointer;
+    padding: 2rem 0;
+}
+
+
+
+/* 
+
+- Navbar Mobile
+
+*/
+
+.navbar__mobile {
+    position: relative;
+}
+
+.navbar__mobile,
+.navbar__mobile::before,
+.navbar__mobile::after {
+    width: 3.5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+}
+
+.navbar__mobile::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+}
+
+.navbar__mobile::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+}
+
+
+
+/* 
+
+- Navbar Right
+
+*/
+
+.navbar__right {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar__banner {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.navbar__item {
+    position: relative;
+    padding: 0.75rem 0;
+    /*? for not disappear beetwen list and link hovering */
+}
+
+.navbar__link {
+    font-size: 1.5rem;
+}
+
+.angle__icon {
+    font-size: 1.2rem;
+}
+
+
+
+/* Start Dropdown Styles */
+
+.navbar__link--list {
+    opacity: 0;
+    visibility: hidden;
+    width: 20rem;
+    position: absolute;
+    top: 4.2rem;
+    border-bottom: 4px solid var(--primary-color);
+    background-color: var(--white-color);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 0rem 1.5rem;
+    border-radius: 0.5rem;
+    z-index: 100;
+    transition: all 250ms ease-in;
+}
+
+.navbar__item:hover .navbar__link--list {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar__link--item {
+    margin: 1.5rem 0;
+}
+
+.navbar__link--link {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+}
+
+/* Finish Dropdown Styles */
+
+
+
+
+/* 
+
+- Navbar Left
+
+*/
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    direction: ltr;
+}
+
+.navbar__profile {
+    display: bl;
+    height: 5rem;
+    border: 2px solid var(--primary-color);
+    padding: 0 1rem;
+    color: var(--primary-color);
+    transition: all 400ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.navbar__profile a {
+    color: var(--primary-color);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__profile:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.navbar__profile:hover a {
+    color: var(--white-color);
+}
+
+.navbar__basket {
+    height: 5rem;
+    width: 4.5rem;
+    background-color: var(--gray-color);
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 50);
+    cursor: pointer;
+}
+
+.navbar__search {
+    height: 5rem;
+    width: 4.5rem;
+    padding: 1.4rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 50);
+    cursor: pointer;
+}
+
+.navbar__search--icon {
+    font-size: 1.8rem;
+}

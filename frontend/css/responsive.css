@@ -1,0 +1,263 @@
+.container {
+    width: 1350px;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 1140px;
+    }
+
+    .nav{
+        margin-top: 12rem;
+    }
+
+    .course-box__container {
+        grid-template-columns: auto auto au;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+
+    .top-bar__info--wrapper {
+        flex-basis: 45%;
+    }
+
+    .navbar__list {
+        gap: 2rem;
+    }
+
+    .course-box__container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 740px;
+    }
+
+    .top-bar {
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+    }
+
+    .top-bar__info--wrapper {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav {
+        margin-top: 16rem;
+    }
+    .navbar__icon {
+        display: block;
+    }
+    .navbar__list, .navbar__search, .navbar__profile {
+        display: none;
+    }
+
+    .course-box__container {
+        grid-template-columns: auto auto;
+    }
+    .product__teacher-name {
+        gap: 0.3rem;
+    }
+    .product__teacher-rate svg {
+        margin: -0.4rem;
+    }
+
+    .about-us__box {
+        height: 12rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .about-us__description, .about-us__text {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .articles__wrapper {
+        grid-template-columns: auto auto;
+    }
+
+    .footer__wrapper {
+        grid-template-columns: auto auto;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .nav{
+        margin-top: 18rem;
+    }
+
+    .landing__wrapper {
+        width: 100%;
+    }
+    .landing__content {
+        font-size: 3rem;
+    }
+    .landing__text {
+        font-size: 1.4rem;
+    }
+    .landing__info {
+        font-size: 1.6rem;
+    }
+    .site-users__icon,
+    .site-courses__icon,
+    .site-minutes__icon {
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-us__wrapper {
+        grid-template-columns: auto;
+    }
+
+    .footer__wrapper {
+        grid-template-columns: auto;
+        text-align: center;
+    }
+
+
+    .course-info__wrapper {
+        flex-wrap: wrap;
+        gap: 2rem;
+        /* flex-direction: column-reverse; */
+    }
+    .course-info__video, .course-info__details {
+        flex-basis: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .header {
+        display: none;
+    }
+    .header__list {
+        align-items: flex-start;
+    }
+    .header__list--item {
+        margin-left: 1.5rem;
+    }
+    .header__list {
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+
+    .nav {
+        margin-top: 2rem;
+    }
+    
+
+    .landing__searchbar {
+        width: 80%;
+    }
+
+    .title-background h3 {
+        font-size: 2rem;
+    }
+    .new-courses__header--right span {
+        font-size: 1.4rem;
+    }
+    .title::before {
+        display: none;
+    }
+    .course-box__container {
+        grid-template-columns: 85%;
+        justify-content: center;
+    }
+
+    .swiper {
+        width: 80%;
+    }
+    
+    .articles__wrapper {
+        grid-template-columns: auto;
+    }
+    .article__img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .category-header__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-bar__info--wrapper {
+        flex-wrap: wrap;
+    }
+
+    .landing__description {
+        flex-wrap: wrap;
+        margin-top: 0rem;
+    }
+    .landing__info {
+        flex-basis: 100%;
+    }
+
+    .course-box__container {
+        grid-template-columns: auto;
+    }
+
+    .category__selection {
+        padding: 0.25rem 0.5rem;
+    }
+    .category__selection--title {
+        font-size: 1.3rem;
+    }
+    .category__selection-link {
+        font-size: 1.1rem;
+    }
+    .category-sort {
+        gap: 0.4rem;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .container {
+        width: 100%;
+    }
+
+}
+

@@ -1,0 +1,157 @@
+/*
+?================================
+?         course Box
+?================================
+*/
+
+.course-box__container {
+    /* display: flex;
+    align-items: center;
+    gap: 3rem; */
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2.5rem;
+}
+
+.course-box {
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 0 0 1rem rgba(43, 206, 86, 0.5); */
+    box-shadow: 0 0 2rem rgba(168, 172, 185, 0.3);
+    border-radius: 1rem;
+    transition: all 200ms ease-in;
+    position: relative;
+}
+
+.course-box-transform:hover {
+    transform: translateY(-0.5rem);
+}
+
+.course-disocunt {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1rem;
+    background-color: rgb(205, 44, 44);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    transform: rotate(-20deg);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.course-image {
+    display: block;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    width: 100%;
+    height: 16.5rem;
+}
+
+.course-information__wrapper {
+    padding: 1.5rem;
+}
+
+.course__name {
+    font-family: "IRANSansBold";
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.course__teacher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+}
+
+.course__teacher-name {
+    font-size: 1.4rem;
+}
+
+.course__teacher-rate {
+}
+.course__teacher-rate span {
+    /* margin-left: 0.3rem; */
+    font-size: 1.4rem;
+}
+
+/*? برای نزدیک تر کردن فاصله ستاره ها به همدیگه  */
+.course__teacher-rate img {
+    margin: -0.1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* 
+- Row Course Box
+*/
+
+
+.course__information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dark-color);
+}
+
+.course__information-users span {
+    font-size: 1.4rem;
+}
+
+.course__information-users,
+.course__teacher-name {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.course__information-price {
+    font-size: 1.4rem;
+}
+
+.course__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    width: 100%;
+    border-top: 0.1rem solid #e8e8e8;
+}
+
+.course__footer a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+}
+
+
+/*
+?================================
+?      course Box Column
+?================================
+*/
+
+
+.course-box--column {
+    flex-direction: row;
+}
+.course-image--column {
+    height: 100%;
+    width: 32rem;
+    border-radius: 0 1rem 1rem 0;
+}
+.course-information__wrapper--column {
+    flex-grow: 1;
+}
+.course__description {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: var(--dark-color);
+}

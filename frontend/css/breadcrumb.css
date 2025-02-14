@@ -1,0 +1,37 @@
+/* 
+?================================
+?          breadcrumb
+?================================
+*/
+
+.breadcrumb {
+
+}
+
+.breadcrumb__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--gray-color);
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.breadcrumb__wrapper div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.breadcrumb-icon {
+    background-color: var(--white-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--dark-color);
+    cursor: pointer;
+}
+

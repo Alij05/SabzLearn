@@ -1,0 +1,442 @@
+@import './variables.css';
+@import './font.css';
+@import './default.css';
+@import './components.css';
+@import './topbar.css';
+@import './navbar.css';
+@import './breadcrumb.css';
+/* @import './course-box.css'; */
+@import './pagination.css';
+@import './products-box.css';
+@import './footer.css';
+
+
+
+/* 
+?================================
+?          Blog Main
+?================================
+*/
+
+.main {
+    margin-top: 4rem;
+}
+
+.main-blog__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/*
+
+- Blog Right Sidebar
+
+*/
+
+
+.main-blog-right__wrapper {
+    flex-basis: 67%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.article-section {
+    box-shadow: 0 0 10px rgba(70, 72, 77, 0.08);
+    padding: 3rem 3rem;
+}
+
+
+/* 
+?================================
+?         Article Section
+?================================
+*/
+
+
+.article__header {
+    font-size: 2.2rem;
+    font-family: 'IRANSansBold';
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #f3f3f3;
+}
+
+.article__information {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.article__information-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.article__information-icon {
+    color: #c7c7c7;
+    font-size: 1.7rem;
+
+}
+
+.article__information-text {
+    color: #8f8f8f;
+    font-size: 1.2rem;
+}
+
+.article__image {
+    /* width: 100%; */
+    display: block;
+    margin: 0 auto;
+}
+
+.article__rate {
+    margin: 3rem 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.article__rate span {
+    color: #7d7d7f;
+}
+
+.article__rate--icon {
+    display: flex;
+    align-items: center;
+}
+
+.article__text {
+    color: #7d7e7f;
+    line-height: 3rem;
+}
+
+.article__read {
+    background-color: #f2f2f2;
+    border-radius: 3rem;
+    padding: 2rem 3rem;
+    margin: 2.5rem 0 4rem;
+}
+
+.article__read--title {
+    font-family: 'IRANSansBold';
+    margin-bottom: 1.5rem;
+}
+
+.article__read--links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.article__read--link {
+    color: var(--dark-color);
+
+}
+
+.article__title {
+    font-family: 'IRANSansBold';
+    font-size: 2rem;
+    color: #008c25;
+    margin: 3.5rem 0 2rem;
+}
+
+.article__description {
+    color: #7d7e7f;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.article__share {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.article__share span {
+    color: #7d7d7f;
+}
+
+.article-info__social-media {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.article-info__social-media svg {
+    font-size: 1.9rem;
+    color: #7d7d7f;
+    transition: all 150ms ease-in;
+}
+
+.article-info__social-media svg:hover {
+    color: #0d6efd;
+}
+
+
+
+/* 
+?================================
+?         Article Section
+?================================
+*/
+
+.article-section__title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.article-section__title--icon {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+}
+
+.article-section__title--text {}
+
+/* 
+- Main Right Box Styles
+*/
+
+.suggestion-article__box--wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.suggestion-article__box {
+    box-shadow: 0 0 10px rgba(70, 72, 77, 0.08);
+    padding: 0rem 2rem 2rem;
+    cursor: pointer;
+}
+
+.suggestion-article__box--img {
+    width: 100%;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.suggestion-article__box--title {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+
+/* 
+?================================
+?   Previous / Next Articles
+?================================
+*/
+
+.last-articles {
+    background-color: var(--gray-color);
+    padding: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.last-articles__left,
+.last-articles__right {}
+
+.last-articles__left p,
+.last-articles__right p {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #7d7d7f;
+}
+
+.last-articles__next-link,
+.last-articles__prev-link {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1.5rem;
+    max-width: 35rem;
+    text-align: center;
+}
+
+
+
+.last-articles__next-icon,
+.last-articles__prev-icon {
+    /* color: #7d7e7f; */
+}
+
+
+/* 
+?================================
+?       Article Comments
+?================================
+*/
+
+.article-comments {
+    margin-top: 3rem;
+}
+
+.article-comments__text {
+    margin-bottom: 1rem;
+    font-family: 'IRANSansBold';
+    color: var(--dark-color);
+}
+
+#article-comments__textarea {
+    width: 100%;
+    height: 20rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 3px solid #eeeeee;
+    padding: 1.5rem 2.5rem 1.5rem 3.5rem;
+}
+
+.article-comment__btn {
+    border: none;outline: none;
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    transition: all 150ms ease-in;
+}
+.article-comment__btn:hover {
+    background-color: #008c25;
+}
+
+
+
+
+
+
+
+/*
+
+- Blog Left Sidebar
+
+*/
+
+.main-blog-left__wrapper {
+    flex-basis: 29%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: sticky;
+    top: 2rem;
+}
+
+.main-left div {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-left h2::before {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 4rem;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 1.2rem;
+    background-color: var(--primary-color);
+    right: -1rem;
+    transform: skewX(-10deg);
+}
+
+/* 
+?================================
+?         Category Box
+?================================
+*/
+
+.course-category-box {
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(70, 72, 77, 0.08);
+}
+
+.category-box__title,
+.blog-box__title {
+    font-family: "IRANSansBold";
+    margin-bottom: 1.5rem;
+}
+
+.categories-list,
+.blogs-list {
+    display: flex;
+    flex-direction: column;
+
+    /* gap: 1.5rem; */
+}
+
+.category-item,
+.blog-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #eeeeee;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.category-item:last-child,
+.blog-item:last-child {
+    border-bottom: none;
+}
+
+.category-item__icon {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    transition: all 200ms ease-in;
+}
+
+.category-link,
+.blog-link {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    transition: all 200ms ease-in;
+}
+
+.category-item:hover {
+    background-color: #f8f9fa;
+}
+
+.category-item:hover .category-link,
+.category-item:hover .category-item__icon {
+    transform: translateX(-1rem);
+}
+
+
+
+/* 
+?================================
+?          Blogs Box
+?================================
+*/
+
+.course-blogs-box {
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(70, 72, 77, 0.08);
+}
+
+.blog-box__title {}
+
+.blogs-list {}
+
+.blog-item {
+    padding: 1.2rem 0;
+}
+
+.blog-item__icon {}
+
+.blog-link {
+    font-size: 1.4rem;
+}

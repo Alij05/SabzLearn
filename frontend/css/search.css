@@ -1,0 +1,15 @@
+@import './variables.css';
+@import './font.css';
+@import './default.css';
+@import './components.css';
+@import './topbar.css';
+@import './navbar.css';
+@import './breadcrumb.css';
+@import './pagination.css';
+@import './products-box.css';
+@import './footer.css';
+
+
+.search-courses {
+    margin-top: 4rem;
+}

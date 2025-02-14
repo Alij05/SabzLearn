@@ -1,0 +1,352 @@
+@import './variables.css';
+@import './font.css';
+@import './default.css';
+@import './components.css';
+@import './topbar.css';
+@import './navbar.css';
+@import './course-box.css';
+@import './footer.css';
+
+
+
+/* 
+?================================
+?            Landing
+?================================
+*/
+
+
+
+.landing {
+    /* background-image: url(../images/background_landing.jfif); */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background_landing.jfif) no-repeat center center;
+    background-repeat: no-repeat;
+    margin-top: 4rem;
+}
+
+.landing__wrapper {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    color: var(--white-color);
+    padding: 10rem 0;
+}
+
+.landing__title {
+    text-align: center;
+}
+
+.landing__content {
+    font-size: 4rem;
+    font-family: "IRANSansBold";
+    margin-bottom: 1.5rem;
+}
+
+.landing__text {
+    font-size: 1.8rem;
+    font-family: "IRANSansBold";
+}
+
+.landing__searchbar {
+    width: 60%;
+    position: relative;
+}
+
+.landing__search {
+    width: 100%;
+    padding: 1.5rem 3rem;
+    border-radius: 1.5rem;
+}
+
+.landing__search::placeholder,
+.landing__search {
+    font-size: 1.5rem;
+    font-family: 'IRANSans';
+}
+
+.landing__search--icon {
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+
+    left: 0.7rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.landing__searchbar--result {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+}
+.hidden {
+    display: none;
+}
+
+.landing__searchbar--result-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+
+.landing__searchbar--result-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dark-color);
+}
+
+.landing__searchbar--result-link {
+}
+
+
+
+.landing__description {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.landing__info {
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'IRANSansBold';
+    text-align: center;
+}
+
+.landing__info p {
+    height: 3rem;
+}
+
+.landing-icon {
+    width: 8rem;
+    height: 8rem;
+    fill: var(--white-color);
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+/* 
+?================================
+?         New courses
+?================================
+*/
+
+.new-courses {
+    margin-top: 9rem;
+}
+
+.new-courses__header {}
+
+
+.new-courses__header--left {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+}
+
+.new-courses__header--left:hover {
+    background-color: rgb(56, 142, 60);
+}
+
+.new-courses__header--left a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--white-color);
+}
+
+.new-courses__header--right {}
+
+
+
+
+
+
+
+
+/* 
+?================================
+?         About Us
+?================================
+*/
+
+.about-us {
+    margin-top: 9rem;
+}
+
+.about-us__header {}
+
+.about-us__header--righ {}
+
+.about-us__wrapper {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+}
+
+.about-us__box {
+    height: 13rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2.3rem 2rem 2.3rem 3rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.about-us__box svg {
+    font-size: 7rem;
+    color: var(--dark-color);
+}
+
+.about-us__description {}
+
+.about-us__title {
+    font-family: 'IRANSansBold';
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.about-us__text {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+
+
+
+/* 
+?================================
+?           About Us
+?================================
+*/
+
+.popular-courses {
+    margin-top: 9rem;
+}
+
+.popular-courses__header {
+    margin-bottom: 3rem;
+}
+
+.popular-courses__header--right {}
+
+
+
+
+/* 
+?================================
+?            Swiper
+?================================
+*/
+
+.swiper {
+    width: 100%;
+}
+
+
+
+/* 
+?================================
+?           Pre Sale
+?================================
+*/
+
+.pre-sale-courses {
+    margin-top: 9rem;
+}
+
+.pre-sale__header {}
+
+.pre-sale__header--right {}
+
+
+
+/* 
+?================================
+?           Articles
+?================================
+*/
+
+.article {
+    margin-top: 9rem;
+}
+
+.article__header {}
+
+.article__header--right {}
+
+
+.articles__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    margin-top: 3rem;
+}
+
+.article-box {
+    box-shadow: 0 5px 10px rgba(70, 72, 77, 0.08);
+    padding: 2rem 2rem 1rem;
+    border-radius: 1rem;
+    transition: all 200ms ease-in;
+}
+
+.article__img {
+    width: 100%;
+    height: 35rem;
+}
+
+.article__title {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: 'IRANSansBold';
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.article__text {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+}
+
+.article__btn {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: all 200ms ease-in;
+    margin: 2rem 0 1.5rem;
+}
+
+.article__btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}

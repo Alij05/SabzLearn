@@ -1,0 +1,127 @@
+/* 
+?================================
+?            Footer
+?================================
+*/
+
+.footer {
+    margin-top: 8rem;
+
+}
+
+.footer__wrapper {
+    background-color: var(--gray-color);
+    padding: 4.5rem 4rem;
+    display: grid;
+    grid-template-columns: 3fr 4fr 2fr;
+    grid-gap: 4rem;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.footer__wrapper::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 1.2rem;
+    border-radius: 2rem 2rem 5rem 5rem;
+    background-color: var(--primary-color);
+    left: 0;
+    right: 0;
+    bottom: -1rem;
+    margin: 0 auto;
+}
+
+.footer__about-us span,
+.footer__last-course span,
+.footer__quick-access span,
+.footer__news span {
+    display: inline-block;
+    font-family: 'IRANSansBold';
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.footer__about-us span::before,
+.footer__last-course span::before,
+.footer__quick-access span::before,
+.footer__news span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0.3;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 1rem;
+    transform: rotate(45deg);
+    background-color: var(--primary-color);
+}
+
+.footer__about-us p {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    line-height: 1.8;
+}
+
+.footer__last-course a,
+.footer__quick-access a {
+    display: block;
+}
+
+.footer__quick-access--links,
+.footer__last-course--links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.access-news__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.footer__news-input__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer__news-input {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-color);
+    font-family: 'IRANSans';
+    box-shadow: 0 0 10px rgba(70, 72, 77, 0.08);
+}
+
+.footer__news-btn {
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-family: 'IRANSans';
+    cursor: pointer;
+    transition: all 150ms ease-in;
+}
+.footer__news-btn:hover {
+    background-color: green;
+}
+
+.footer__description {
+    background-color: var(--gray-color);
+    padding: 3rem 0;
+    text-align: center;
+    font-family: "IRANSansBold";
+    margin: 8rem auto 0;
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}

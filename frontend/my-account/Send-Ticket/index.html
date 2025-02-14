@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب کاربری | ارسال تیکت</title>
+    <link rel="shortcut icon" href="../../images/logo/favicon.svg" type="image/svg">
+
+    <link rel="stylesheet" href="vendor/BootStrap/BootStrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!--------------------------------  Header  -------------------------------->
+    <header class="header">
+        <div class="container">
+            <div class="top-bar">
+                <ul class="header__list">
+                    <li class="header__list--item">
+                        <a href="#" class="header__list--link">آموزش HTML</a>
+                    </li>
+                    <li class="header__list--item">
+                        <a href="#" class="header__list--link">آموزش CSS</a>
+                    </li>
+                    <li class="header__list--item">
+                        <a href="#" class="header__list--link">آموزش JS</a>
+                    </li>
+                    <li class="header__list--item">
+                        <a href="#" class="header__list--link">آموزش بوت استرپ</a>
+                    </li>
+                    <li class="header__list--item">
+                        <a href="#" class="header__list--link">آموزش پایتون</a>
+                    </li>
+                    <li class="header__list--item">
+                        <a href="#" class="header__list--link">آموزش React</a>
+                    </li>
+                    <!-- <li class="header__list--item">
+                        <a href="#" class="header__list--link">20,000 تومان</a>
+                    </li> -->
+                </ul>
+
+                <div class="top-bar__info--wrapper">
+                    <div class="top-bar__phonenumber">
+                        <span></span>
+                        <i class="fas fa-phone top-bar__phonenumber--icon"></i>
+                    </div>
+                    <div class="top-bar__email">
+                        <a></a>
+                        <i class="fas fa-envelope top-bar__email--icon"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-bar">
+                <div class="navbar__icon">
+                    <div class="navbar__mobile"></div>
+                </div>
+                <div class="navbar__right">
+                    <div class="navbar__banner">
+                        <a href="Sabzlearn.ir">
+                            <img src="./images/logo/Logo.png" alt="SabzLearn Logo">
+                        </a>
+                    </div>
+                    <ul class="navbar__list" id="navbar-list">
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">صفحه اصلی</a>
+                        </li>
+                        <!-- Data Loaded from Js -->
+
+                    </ul>
+                </div>
+                <div class="navbar__left">
+                    <div class="navbar__profile">
+                        <i class="fas fa-user"></i>
+                        <a></a>
+                    </div>
+                    <div class="navbar__basket">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="navbar__search">
+                        <i class="fas fa-search navbar__search--icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------  Header  -------------------------------->
+
+    <!--------------------------------  Content-Section  -------------------------------->
+    <section class="content">
+        <div class="content-header">
+            <div class="container">
+                <span class="content-header__title">حساب کاربری من</span>
+                <span class="content-header__subtitle">پیشخوان</span>
+            </div>
+        </div>
+        <div class="content-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="sidebar">
+                            <span class="sidebar__name" id="sidebar__name"></span>
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Account/index.html">پیشخوان</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Orders/index.html">سفارش ها</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../">کیف پول من</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Edit/index.html">جزئیات حساب کاربری</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Buyed/index.html">دوره های خریداری شده</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Tickets/index.html">تیکت های پشتیبانی</a>
+                                </li>
+                                <li class="sidebar__item" id="logout-user">
+                                    <a class="sidebar__link">خروج از سیستم</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="ticket">
+                            <div class="ticket-header">
+                                <span class="ticket-header__title">ارسال تیکت جدید</span>
+                                <a class="ticket-header__link" href="#">همه تیکت ها</a>
+                            </div>
+                            <form class="ticket-form" action="#">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="ticket-form__label">دپارتمان را انتخاب کنید:</label>
+                                        <select class="ticket-form__select" id="ticket-department">
+                                            <option class="ticket-form__option">لطفا یک مورد را انتخاب نمایید.</option>
+                                            <!-- <option class="ticket-form__option" value="63b68879f1d06a5090090f60">پشتیبانی</option>
+                                            <option class="ticket-form__option" value="63b6888a5763c3034ca862b0">مشاوره</option>
+                                            <option class="ticket-form__option" value="63b6888f2bfc084137143ab3">مالی</option>
+                                            <option class="ticket-form__option" value="63b68895d9ea678d88ca3432">ارتباط با مدیریت</option> -->
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="ticket-form__label">نوع تیکت را انتخاب کنید:</label>
+                                        <select class="ticket-form__select" id="ticket-sub-department">
+                                            <!-- Content of Tickets Data Related to Department Loaded From Js  -->
+                                            <option class="ticket-form__option">لطفا اول دپارتمان را انتخاب کنید</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="ticket-form__label">عنوان تیکت را وارد کنید:</label>
+                                        <input class="ticket-form__input" id="ticket-title" type="text">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="ticket-form__label">اولویت تیکت را انتخاب کنید:</label>
+                                        <select class="ticket-form__select" id="ticket-priority">
+                                            <option class="ticket-form__option">لطفا یک مورد را انتخاب نمایید.</option>
+                                            <option class="ticket-form__option" value="3">کم</option>
+                                            <option class="ticket-form__option" value="2" selected>متوسط</option>
+                                            <option class="ticket-form__option" value="1">بالا</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="ticket-form__label">محتوای تیکت را وارد نمایید:</label>
+                                        <textarea class="ticket-form__textarea" id="ticket-text-input"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="ticket-form__file">
+                                            <span class="ticket-form__file-max">حداکثر اندازه: 6 مگابایت</span>
+                                            <span class="ticket-form__file-format">فرمت‌های مجاز: jpg, png.jpeg, rar,
+                                                zip</span>
+                                            <input class="ticket-form__file-input" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="ticket-form__btn" id="send-ticket-btn">
+                                            <i class="ticket-form__btn-icon fa fa-paper-plane"></i>
+                                            ارسال تیکت
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------  Content-Section  -------------------------------->
+
+    <!--------------------------------  Footer-Section  -------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__about-us">
+                    <span>درباره ما</span>
+                    <p>امروز آکادمی آموزش برنامه نویسی سبزلرن به عنوان یک آکادمی خصوصی فعالیت میکنه و این به این معنی
+                        هست که هر مدرسی اجازه تدریس در اون رو نداره و باید از فیلترینگ های خاص آکادمی سبزلرن رد شه! این
+                        به این معنی هست که ما برامون فن بیان و نحوه تعامل مدرس با دانشجو بسیار مهمه! ما در آکادمی سبزلرن
+                        تضمین پشتیبانی خوب و با کیفیت رو به شما میدیم . چرا که مدرسین وب سایت سبزلرن حتی برای پشتیبانی
+                        دوره های رایگان شون هم هزینه دریافت میکنند و متعهد هستند که هوای کاربر های عزیز رو داشته باشند !
+                    </p>
+                </div>
+
+                <div class="footer__last-course">
+                    <span>آخرین مطالب</span>
+                    <div class="footer__last-course--links">
+                        <a href="#">نحوه نصب کتابخانه در پایتون | آموزش نصب کتابخانه پایتون</a>
+                        <a href="#">چگونه پایتون را آپدیت کنیم؟ | آموزش صفر تا صد آپدیت کردن پایتون</a>
+                        <a href="#">آموزش نصب پایتون ( Python ) در در مک، ویندوز و لینوکس | گام به گام و تصویری</a>
+                        <a href="#">بهترین فریم ورک های فرانت اند | 16 فریم ورک Front end بررسی معایب و مزایا</a>
+                        <a href="#">معرفی بهترین سایت آموزش جاوا اسکریپت [ تجربه محور ] + آموزش رایگان</a>
+                    </div>
+                </div>
+
+                <div class="access-news__wrapper">
+                    <div class="footer__quick-access">
+                        <span>دسترسی سریع</span>
+                        <div class="footer__quick-access--links">
+                            <a href="#">آموزش HTML</a>
+                            <a href="#">آموزش CSS</a>
+                            <a href="#">آموزش جاوا اسکریپت</a>
+                            <a href="#">آموزش REact Js</a>
+                            <a href="#">آموزش بوت استرپ</a>
+                        </div>
+                    </div>
+                    <div class="footer__news">
+                        <span>عضویت در خبرنامه</span>
+                        <p>از تخفیفات و اخبار سایت با خبر شوید</p>
+                        <div class="footer__news-input__wrapper">
+                            <input type="email" placeholder="@ ایمیل" class="footer__news-input">
+                            <button class="footer__news-btn">عضویت</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__description">کلیه حقوق برای آکادمی آموزش برنامه نویسی سبز لرن محفوظ است.</p>
+    </footer>
+    <!--------------------------------  Footer-Section  -------------------------------->
+
+    <script src="vendor/FontAwesome5/font_awesome.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="../../js/shared.js" type="module"></script>
+    <script src="../../js/my-account/shared.js" type="module"></script>
+    <script src="../../js/my-account/send-ticket.js" type="module"></script>
+</body>
+
+</html>

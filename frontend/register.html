@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبزلرن | صفحه ثبت نام</title>
+
+    <link rel="shortcut icon" href="./images/logo/favicon.svg" type="image/svg">
+
+    <link rel="stylesheet" href="./vendor/FontAwesome5/all.min.css">
+    <link rel="stylesheet" href="./vendor/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login-register.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-bar">
+                <div class="navbar__icon">
+                    <div class="navbar__mobile"></div>
+                </div>
+                <div class="navbar__right">
+                    <div class="navbar__banner">
+                        <a href="Sabzlearn.ir">
+                            <img src="./images/logo/Logo.png" alt="SabzLearn Logo">
+                        </a>
+                    </div>
+                    <ul class="navbar__list" id="navbar-list">
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">صفحه اصلی</a>
+                        </li>
+                        <!-- Data Loaded from Js -->
+                         
+                    </ul>
+                </div>
+                <div class="navbar__left">
+                    <div class="navbar__profile">
+                        <i class="fas fa-user"></i>
+                        <a></a>
+                    </div>
+                    <div class="navbar__basket">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="navbar__search">
+                        <i class="fas fa-search navbar__search--icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="login">
+        <div class="container">
+            <div class="login-wrapper">
+                <h2 class="login-title">ساخت حساب کاربری</h2>
+                <p class="login-subtitle">خوشحالیم قراره به جمع ما بپیوندی</p>
+                <div class="login-question">
+                    <span class="login-question__text">قبلا ثبت نام کردید؟</span>
+                    <a href="./login.html" class="login-question__link">وارد شوید</a>
+                </div>
+
+                <form action="#" class="login-form">
+                    <div class="login-form__input-wrapper">
+                        <input type="text" class="login-form__input" id="name" placeholder="نام و نام خانوادگی ">
+                        <i class="fas fa-user login-form__icon"></i>
+                    </div>
+                    <div class="login-form__input-wrapper">
+                        <input type="text" class="login-form__input" id="username" placeholder="نام کاربری ">
+                        <i class="fas fa-user login-form__icon"></i>
+                    </div>
+                    <div class="login-form__input-wrapper">
+                        <input type="text" class="login-form__input" id="email" placeholder="آدرس ایمیل">
+                        <i class="fas fa-message login-form__icon"></i>
+                    </div>
+                    <div class="login-form__input-wrapper">
+                        <input type="text" class="login-form__input" id="phonenumber" placeholder="شماره تماس">
+                        <i class="fas fa-phone login-form__icon"></i>
+                    </div>
+                    <div class="login-form__input-wrapper">
+                        <input type="password" class="login-form__input" id="password" placeholder="رمز عبور">
+                        <i class="fas fa-lock-open login-form__icon"></i>
+                    </div>
+
+                    <button type="submit" class="login-form__btn" id="register-btn">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>ثبت نام</span>
+                    </button>
+
+                </form>
+                
+                <div class="login-form__rules">
+                    <p class="login-form__rules-desc">سلام کاربر محترم</p>
+                    <ul class="login-form__rules-list">
+                        <li class="login-form__rules-item">
+                            <p class="login-form__rules-text">لطفا از مرورگر های مطمئن و بروز مانند گوگل کروم و فایرفاکس استفاده کنید.</p>
+                        </li>
+                        <li class="login-form__rules-item">
+                            <p class="login-form__rules-text">ما هرگز اطلاعات محرمانه شمارا از طریق ایمیل درخواست نمیکنیم.</p>
+                        </li>
+                        <li class="login-form__rules-item">
+                            <p class="login-form__rules-text">لطفا کلمه عبور خود را در فواصل زمانی کوتاه تغییر دهید.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Font Awesome -->
+    <script src="./vendor/FontAwesome5/all.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./vendor/Bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="./js/register.js" type="module"></script>
+    <script src="./js/shared.js" type="module"></script>
+
+</body>
+
+</html>

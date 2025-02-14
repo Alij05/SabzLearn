@@ -1,0 +1,39 @@
+
+/* 
+?================================
+?         Products Box
+?================================
+*/
+
+.course-products-box {
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(70, 72, 77, 0.08);
+}
+
+.products-box__title {
+    font-family: 'IRANSansBold';
+    margin-bottom: 2rem;
+}
+
+.products-box__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.product-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-box__image {
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+}
+
+.product-box__name {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+}

@@ -1,0 +1,55 @@
+/* 
+?================================
+?          Components
+?================================
+*/
+
+.title-background h3 {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-family: 'IRANSansBold';
+    position: relative;
+}
+
+.title-text span {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+    margin-top: 0.5rem;
+}
+
+.title-background h3::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 30rem;
+    height: 3rem;
+    background-color: var(--primary-color);
+    opacity: 0.25;
+    /* right: -0.5rem; */
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+
+.title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    width: 0.4rem;
+    height: 80%;
+    border-radius: 1rem;
+    right: -1rem;
+    top: 0;
+    bottom: 0;
+    margin:  auto;
+    transform: rotate(8deg);
+    background-color: var(--primary-color);
+}

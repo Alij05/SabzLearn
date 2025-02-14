@@ -1,0 +1,53 @@
+/* 
+?================================
+?       Category Pagination
+?================================
+*/
+
+.category-pagination__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 4rem;
+}
+
+.category-pagination__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: var(--gray-color);
+    transition: all 200ms ease-in;
+}
+
+.category-pagination__item:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.category-pagination__item:hover .category-pagination__link {
+    color: var(--white-color);
+}
+
+
+.category-pagination__link {
+    font-size: 1.4rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-pagination__item--active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.category-pagination__item--active a {
+    color: var(--white-color);
+}
