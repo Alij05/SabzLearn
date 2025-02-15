@@ -33,7 +33,7 @@ const getAndShowAllTickets = async () => {
                     <button type='button' onclick="showTicketBody('${ticket.body}')" class='btn btn-primary edit-btn'>مشاهده</button>
                 </td>
                 <td>
-                    <button type='button' onclick="answerToTicket('${ticket._id}')" class='btn btn-primary edit-btn'>پاسخ</button>
+                    <button type='button' onclick="answerToTicket('${ticket._id}')" class='btn btn-success edit-btn'>پاسخ</button>
                 </td>
             </tr>
         `
