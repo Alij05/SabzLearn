@@ -158,7 +158,8 @@
                                         <label class="ticket-form__label">نوع تیکت را انتخاب کنید:</label>
                                         <select class="ticket-form__select" id="ticket-sub-department">
                                             <!-- Content of Tickets Data Related to Department Loaded From Js  -->
-                                            <option class="ticket-form__option">لطفا اول دپارتمان را انتخاب کنید</option>
+                                            <option class="ticket-form__option">لطفا اول دپارتمان را انتخاب کنید
+                                            </option>
                                         </select>
                                     </div>
                                     <div class="col-6">
@@ -174,10 +175,17 @@
                                             <option class="ticket-form__option" value="1">بالا</option>
                                         </select>
                                     </div>
-                                    <div class="col-12">
-                                        <label class="ticket-form__label">محتوای تیکت را وارد نمایید:</label>
-                                        <textarea class="ticket-form__textarea" id="ticket-text-input"></textarea>
-                                    </div>
+                                </div>
+                                <div class="col-6 d-none" id="course-select-parent">
+                                    <label class="ticket-form__label">دوره مورد نظر را انتخاب کنید</label>
+                                    <select class="ticket-form__select" id="course-ticket-selection">
+                                        <!-- Content of Tickets Data Related to Department Loaded From Js  -->
+                                        <option class="ticket-form__option">لطفا دوره موردنظر را انتخاب کنید</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="ticket-form__label">محتوای تیکت را وارد نمایید:</label>
+                                    <textarea class="ticket-form__textarea" id="ticket-text-input"></textarea>
                                     <div class="col-12">
                                         <div class="ticket-form__file">
                                             <span class="ticket-form__file-max">حداکثر اندازه: 6 مگابایت</span>

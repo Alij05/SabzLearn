@@ -22,7 +22,7 @@ const getAndShowUserTickets = async () => {
                 <div class="ticket-content__box">
                     <div class="ticket-content__right">
                         <div class="ticket-content__right-right">
-                            <a class="ticket-content__link" href="../Answer-Ticket/index.html?id=${ticket._id}">${ticket.title}</a>
+                            <a class="ticket-content__link" href="../Ansewr-Ticket/index.html?id=${ticket._id}">${ticket.title}</a>
                             <span class="ticket-content__category">
                                 <i class="fa fa-ellipsis-v ticket-content__icon"></i>
                                ${ticket.departmentSubID}</span>
@@ -55,10 +55,6 @@ const getAndShowUserTickets = async () => {
 
 }
 
-
-const sendTicket = async () => {
-
-}
 
 
 
